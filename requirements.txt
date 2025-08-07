@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+pymongo
+pandas
+requests
+python-dotenv
+google-generativeai
+email-validator
