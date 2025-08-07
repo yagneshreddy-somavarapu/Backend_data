@@ -16,11 +16,13 @@ import smtplib
 from email.message import EmailMessage
 from getpass import getpass
 app = FastAPI()
-
+origins = [
+    "https://prostack-gray.vercel.app","*"
+]
 # Enable CORS for frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], 
+    allow_origins=origins, 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
