@@ -17,7 +17,7 @@ from email.message import EmailMessage
 from getpass import getpass
 app = FastAPI()
 origins = [
-    "https://prostack-gray.vercel.app","*"
+    "https://prostack-gray.vercel.app"
 ]
 # Enable CORS for frontend
 app.add_middleware(
